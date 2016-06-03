@@ -1,0 +1,16 @@
+{% extends "page.html" %}
+{% block content%}
+	{% if content %}
+	<h1 class="page-header">{{ content.tittle }}</h1>
+
+	<div class="row placeholders">
+	    <div class="col-xs-6 col-sm-3 placeholder">
+	        <!--span class="text-muted">makess.php?server={{ content.server }}&server_port={{ content.server_port }}&password={{ content.password }}&method={{ content.method }}</span -->
+	        
+	        <image src="{% url 'qr' sb_id %}" style="border-radius:0%">
+	        
+	    </div>
+
+	</div>
+	{% endif %}
+{% endblock %}
